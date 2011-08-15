@@ -1,5 +1,5 @@
 /* 
-  A port of https://github.com/ialcazar/JavaScript-Examples/blob/master/arrays/concatenator/concatenator.js firebug version -> jasmine
+  A port of @ialcazar https://github.com/ialcazar/JavaScript-Examples/blob/master/arrays/concatenator/concatenator.js firebug version -> jasmine
 */
 
 describe('stringMeDuckTyping',function(){
