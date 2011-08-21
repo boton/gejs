@@ -15,9 +15,7 @@ var map = function(arr,func) {
   l = arr.length;
   
   for (var i = 0; i < l; ++i) {
-    newArray.push(func.call(arr,arr[i]));
-    //DUDA - seria buena cosa pasar el this a null si no lo uso?
-    //newArray.push(func.call(null,arr[i]));
+    newArray.push(func(arr[i]));
   }
   
   return newArray;
