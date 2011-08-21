@@ -24,27 +24,19 @@ var map = function(arr,func) {
 };
 
 var crearSaludo = function(names){
-    if (typeof names === 'string') {
-    return function() { 
-      var saludo = 'Hola ' + names; 
+  
+  var saludo = function(name){
+    return function() {
+      var saludo = 'Hola ' + name; 
       console.log(saludo); 
-      return saludo; 
+      return saludo;
     };
+  }
+  
+  if (typeof names === 'string') {
+    return saludo(names);
   } else if (Array.isArray(names)) {
-    var obj,
-    saluda;
-    
-    saluda = function(names) {
-      return function() {
-        var saludo = 'Hola ' + names; 
-        console.log(saludo); 
-        return saludo;
-      };
-    };
-    
-    obj = map(names,saluda);
-    
-    return obj; 
+    return map(names,saludo);
   } else {
     throw new TypeError("param is not a string or array");
   }
