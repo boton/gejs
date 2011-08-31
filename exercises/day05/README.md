@@ -1,1 +1,0 @@
-Exercises day 05 -> <http://www.meetup.com/madridjs/pages/Reunion5.2011.09.01/>
